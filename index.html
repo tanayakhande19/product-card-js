@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Card</title>
+        <style>
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: beige;
+            border:1px solid black;
+            border: 15px;
+            }
+
+           .price {
+            color: #cc0000;
+            font-size: 22px;
+           }
+           h1{
+            color: red;
+           }
+           p{
+            color: blue;
+           }
+
+           .card button {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: #ff6600;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+         font-size: 18px;
+        }
+
+       .card button:hover {
+       opacity: 0.7;
+       }
+       
+        </style>
+        <script>
+          let count=0;
+          function inc()
+          {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+          }
+          function reset()
+          {
+            count=0;
+            document.getElementById("counter").innerHTML = count;
+          }
+          function dec()
+          {
+            count--;
+            document.getElementById("counter").innerHTML = count;
+          }
+          
+        </script>
+    </head>
+    <body>
+       <div class="card">
+        <img src="samsung galaxy S20 FE.png" alt="Best Mobile Phone" style="width:80%"/>
+        <h1>Samsung Galaxy S20 FE</h1>
+        <h2>Get up to ₹34559.00 off on exchange of your current phone.</h2>
+        <h4>Features</h4>
+        <ul><li>4G and 5G Connectivity.</li>
+        <li>128GB memory.</li>
+        <li>Available in cloud lavendar, cloud navy & cloud mint colour.</li></ul>
+        <p class="price">₹29,999</p>
+        <h1 id="counter">0</h1>
+
+        <button onclick="inc()">+</button>
+        <button onclick="reset()">Reset to zero</button>
+        <button onclick="dec()">-</button>
+      
+        <button style="background:black;">Add to cart</button>
+    </div>
+    </body>
+</html>
